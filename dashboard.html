@@ -22,7 +22,7 @@
         <!-- WELCOME SECTION -->
         <section id="hero">
             <div class="hero-content">
-                <h1>Welcome, Rahul</h1>
+                <h1 id="welcome-heading">Welcome</h1>
                 <p>Your personalized dashboard for smart time utilization and productivity.</p>
             </div>
         </section>
@@ -31,19 +31,15 @@
         <section id="profile">
             <h2>Profile & Timetable</h2>
             <div class="profile-section-card card">
-                 <div class="profile-details">
-                    <p><strong>Name:</strong> Rahul</p>
-                    <p><strong>Branch:</strong> CSBS (Computer Science & Business Systems)</p>
-                    <p><strong>Email:</strong> hellfirehackers@gmail.com</p>
-                    <p><strong>Role:</strong> Student</p>
+                <div class="profile-details">
+                    <p><strong>Name:</strong> <span id="user-name"></span></p>
+                    <p><strong>Branch:</strong> <span id="user-branch"></span></p>
+                    <p><strong>Email:</strong> <span id="user-email"></span></p>
+                    <p><strong>Role:</strong> <span id="user-role"></span></p>
                 </div>
                 <hr class="profile-divider">
-                <div class="timetable-grid">
-                    <div class="time-block card"><strong>Morning (7:00 – 9:00):</strong><br>Coding practice (DSA, logic building)</div>
-                    <div class="time-block card"><strong>Late Morning (10:00 – 14:00):</strong><br>College lectures, labs, academic work</div>
-                    <div class="time-block card"><strong>Afternoon (15:00 – 17:00):</strong><br>Core CSBS subjects (Business Systems + Computer Science)</div>
-                    <div class="time-block card"><strong>Evening (18:00 – 19:30):</strong><br>Project development (Web / AI / Hackathon preparation)</div>
-                    <div class="time-block card"><strong>Night (20:00 – 21:00):</strong><br>Revision, reading, or skill improvement</div>
+                <div class="timetable-grid" id="timetable-grid">
+                    <!-- Timetable will be dynamically loaded here -->
                 </div>
             </div>
         </section>
@@ -61,6 +57,6 @@
         </section>
     </div>
 
-    <script src="dashboard.js"></script>
+    <script type="module" src="dashboard.js"></script>
 </body>
 </html>

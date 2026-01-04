@@ -8,27 +8,28 @@
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
+    <video class="video-bg" autoplay muted loop playsinline>
+        <source src="background.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+
     <div class="login-container">
-        <div class="login-box">
-            <h1>Proto</h1>
-            <p>Student Login</p>
+        <div class="login-card card">
+            <h2>Login to Proto</h2>
             <form id="login-form">
                 <div class="input-group">
-                    <input type="email" id="login-email" placeholder="Student ID / Email" required>
+                    <input type="email" id="login-email" placeholder="Email" required>
                 </div>
                 <div class="input-group">
                     <input type="password" id="login-password" placeholder="Password" required>
                 </div>
                 <button type="submit" id="login-button">Login</button>
-                <div id="error-message" class="error-message"></div>
-                <div id="loading-spinner" class="loading-spinner" style="display: none;"></div>
+                <div class="loading-spinner" style="display: none;"></div>
+                <p id="error-message" class="error-text"></p>
             </form>
         </div>
     </div>
 
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js" type="module"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js" type="module"></script>
-    <script src="firebase.js" type="module"></script>
-    <script src="login.js" type="module"></script>
+    <script type="module" src="login.js"></script>
 </body>
 </html>
