@@ -28,12 +28,23 @@
     box-shadow: 0 0 16px var(--lavender-glow);
 }
 
-.profile-card, .timetable-grid, .recommendation-cards {
+.profile-section-card {
     background: var(--glass-bg);
     padding: 2rem;
     border-radius: 16px;
     box-shadow: 0 0 24px var(--lavender-glow-soft);
     margin-bottom: 2rem;
+}
+
+.profile-details {
+    margin-bottom: 1.5rem;
+}
+
+.profile-divider {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+    margin: 2rem 0;
 }
 
 .timetable-grid {
@@ -80,7 +91,7 @@
         padding: 1rem;
     }
 
-    .profile-card, .timetable-grid, .recommendation-cards {
+    .profile-section-card {
         padding: 1.5rem;
     }
 }
