@@ -28,11 +28,36 @@
     box-shadow: 0 0 16px var(--lavender-glow);
 }
 
-.dashboard-content {
+.profile-card, .timetable-grid, .recommendation-cards {
     background: var(--glass-bg);
     padding: 2rem;
     border-radius: 16px;
     box-shadow: 0 0 24px var(--lavender-glow-soft);
+    margin-bottom: 2rem;
+}
+
+.timetable-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.time-block {
+    background: var(--glass-bg);
+    border-radius: 14px;
+    box-shadow: 0 0 10px var(--lavender-neon);
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.time-block:hover {
+    box-shadow: 0 0 24px var(--lavender-glow);
+    transform: scale(1.05);
+}
+
+.recommendation-cards .card {
+    margin-bottom: 1rem;
 }
 
 /* RESPONSIVE DESIGN */
@@ -55,7 +80,7 @@
         padding: 1rem;
     }
 
-    .dashboard-content {
+    .profile-card, .timetable-grid, .recommendation-cards {
         padding: 1.5rem;
     }
 }

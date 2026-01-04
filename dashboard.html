@@ -8,20 +8,60 @@
     <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
+    <video class="video-bg" autoplay muted loop playsinline>
+        <source src="background.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+
     <div class="dashboard-container">
-        <div class="dashboard-header">
-            <h1>Welcome, Student!</h1>
-            <button id="logout-btn" class="cta-btn">Logout</button>
-        </div>
-        <div class="dashboard-content">
-            <!-- User-specific content will go here -->
-            <p>Your personalized dashboard is under construction.</p>
-        </div>
+        <header class="dashboard-header">
+            <h1>Proto Dashboard</h1>
+            <button id="logout-btn">Logout</button>
+        </header>
+
+        <!-- WELCOME SECTION -->
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Welcome, Rahul</h1>
+                <p>Your personalized dashboard for smart time utilization.</p>
+            </div>
+        </section>
+
+        <!-- PROFILE OVERVIEW SECTION -->
+        <section id="profile">
+            <h2>Profile Overview</h2>
+            <div class="profile-card card">
+                <p><strong>Name:</strong> Rahul</p>
+                <p><strong>Branch:</strong> CSBS (Computer Science & Business Systems)</p>
+                <p><strong>Role:</strong> Student</p>
+            </div>
+        </section>
+
+        <!-- RECOMMENDED TIMETABLE SECTION -->
+        <section id="timetable">
+            <h2>Recommended Timetable</h2>
+            <div class="timetable-grid">
+                <div class="time-block card"><strong>Morning (7:00 – 9:00):</strong><br>Coding practice (DSA, problem-solving)</div>
+                <div class="time-block card"><strong>Late Morning (10:00 – 14:00):</strong><br>College lectures and labs</div>
+                <div class="time-block card"><strong>Afternoon (15:00 – 17:00):</strong><br>Core CSBS subjects (Business Systems + CS)</div>
+                <div class="time-block card"><strong>Evening (18:00 – 19:30):</strong><br>Project work (Web Development / AI)</div>
+                <div class="time-block card"><strong>Night (20:00 – 21:00):</strong><br>Revision or skill enhancement</div>
+            </div>
+        </section>
+
+        <!-- SMART RECOMMENDATIONS SECTION -->
+        <section id="recommendations">
+            <h2>Smart Recommendations</h2>
+            <div class="recommendation-cards">
+                <div class="card">Focus on Data Structures & Algorithms</div>
+                <div class="card">Build one mini-project every month</div>
+                <div class="card">Balance business concepts with technical skills (CSBS focus)</div>
+                <div classa="card">Use Pomodoro technique for focused sessions</div>
+                <div class="card">Maintain consistency with short daily goals</div>
+            </div>
+        </section>
     </div>
 
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js" type="module"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js" type="module"></script>
-    <script src="firebase.js" type="module"></script>
-    <script src="dashboard.js" type="module"></script>
+    <script src="dashboard.js"></script>
 </body>
 </html>
