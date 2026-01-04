@@ -1,0 +1,82 @@
+/* LOGIN PAGE STYLES */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--lavender-gradient);
+}
+
+.login-box {
+    background: var(--glass-bg);
+    padding: 2.5rem;
+    border-radius: 24px;
+    box-shadow: 0 0 32px var(--lavender-glow);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+.login-box h1 {
+    font-size: 2.5rem;
+    color: var(--lavender-neon);
+    margin-bottom: 0.5rem;
+}
+
+.login-box p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px 20px;
+    border: 1px solid var(--lavender-neon);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--text-light);
+    font-size: 1rem;
+}
+
+#login-button {
+    width: 100%;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--lavender-neon);
+    color: var(--text-dark);
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#login-button:hover {
+    background-color: var(--lavender-glow);
+    box-shadow: 0 0 24px var(--lavender-glow);
+}
+
+.error-message {
+    color: #ff8a8a;
+    margin-top: 1rem;
+    height: 20px;
+}
+
+.loading-spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-left-color: var(--lavender-neon);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin: 1rem auto 0;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
