@@ -80,3 +80,18 @@
 @keyframes spin {
     to { transform: rotate(360deg); }
 }
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 480px) {
+    .login-box {
+        padding: 2rem;
+    }
+
+    .login-box h1 {
+        font-size: 2rem;
+    }
+
+    .login-box p {
+        font-size: 1rem;
+    }
+}

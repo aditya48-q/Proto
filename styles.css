@@ -80,6 +80,7 @@ body {
     text-align: center;
     max-width: 600px;
     margin: auto;
+    padding: 0 1rem;
 }
 .hero-content h1 {
     font-size: 2.8rem;
@@ -124,9 +125,6 @@ body {
 .cta-btn:hover {
     box-shadow: 0 0 32px var(--lavender-neon), 0 0 64px var(--lavender-glow);
     transform: translateY(-4px) scale(1.05);
-}
-.cta-btn:hover::after {
-    opacity: 0.2;
 }
 
 /* SECTION STYLES */
@@ -324,22 +322,50 @@ footer.visible {
     .recommendation-panel {
         margin-left: 0;
     }
+    h1 {
+        font-size: 2.2rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
 }
 @media (max-width: 600px) {
     .hero-content h1 {
         font-size: 2rem;
     }
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+    .cta-btn {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+    }
     section {
-        padding: 40px 8px;
+        padding: 40px 12px;
     }
     .card, .integration-card {
-        min-width: 160px;
+        min-width: 100%;
         padding: 1rem;
+        font-size: 1rem;
+    }
+    .problem-content {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    h2 {
+       font-size: 1.5rem;
+    }
+    .hero-content p {
         font-size: 1rem;
     }
 }
 
-/* AUTHENTICATION MODAL */
+/* AUTHENTICATION MODAL (OLD - can be removed if not used) */
 .modal {
     display: none;
     position: fixed;
